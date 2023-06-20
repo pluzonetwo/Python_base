@@ -33,3 +33,26 @@
 # *Пример:*
 # 385916 -> yes
 # 123456 -> no
+
+# Решение:
+# inputNum = input('Введите шестизначное число: ')
+
+# isFiveDigit = len(inputNum) != 5
+
+# if isFiveDigit:
+#     print('Необходимо ввести шестизначное число!')
+# else:
+#     num1 = int(inputNum[0])
+#     num2 = int(inputNum[1])
+#     num3 = int(inputNum[2])
+#     num4 = int(inputNum[3])
+#     num5 = int(inputNum[4])
+#     num6 = int(inputNum[5])
+
+#     result1 = num1 + num2 + num3
+#     result2 = num4 + num5 + num6
+
+#     if result1 == result2:
+#         print('Yes!')
+#     else:
+#         print('No!')
