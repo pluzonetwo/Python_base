@@ -28,6 +28,21 @@
 #     # print(random_numbers)
 #     iter += 1
 
+# Вариант (эталон)
+# n = int(input('Inpit quantity of coins: '))
+# count_zero = 0
+# count_one = 0
+# for i in range(n):
+#     x = input('орел или решка? ')
+#     if x == 'орел':
+#         count_zero += 1
+#     else:
+#         count_one += 1
+# if count_one > count_zero:
+#     print(count_zero)
+# else:
+#     print(count_one)
+
 # Задача 12: Петя и Катя – брат и сестра. Петя – студент, а Катя – школьница. Петя помогает Кате по математике. 
 # Он задумывает два натуральных числа X и Y (X,Y≤1000), а Катя должна их отгадать. Для этого Петя делает две подсказки. 
 # Он называет сумму этих чисел S и их произведение P. Помогите Кате отгадать задуманные Петей числа.
@@ -44,6 +59,15 @@
 
 # maxNum = int(input('Input max num: '))
 
+# Вариант 1
 # for i in range(maxNum):
 #     if 2 ** i < maxNum:
 #         print(2 ** i)
+
+# Вариант 2
+# maxNum = int(input('Input max num: '))
+# i = 0
+
+# while 2 ** i <= maxNum:
+#     print(2 ** i)
+#     i += 1
