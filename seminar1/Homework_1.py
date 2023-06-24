@@ -11,6 +11,12 @@
 # result = num1 + num2 + num3
 # print(f'{num1}, {num2}, {num3}')
 # print('Сумма цифр введенного числа: 'f'{result}')
+# Вариант 2
+# summa = 0
+# while n > 0:
+#     ost = n % 10
+#     n = n // 10
+#     summa += ost
 
 # Задача 4: Петя, Катя и Сережа делают из бумаги журавликов. Вместе они сделали S журавликов. 
 # Сколько журавликов сделал каждый ребенок, если известно, что Петя и Сережа сделали одинаковое количество журавликов, 
@@ -68,7 +74,7 @@
 # widthOfChocolate = int(input('Введите ширину шоколадки: '))
 # numOfSlices = int(input('Сколько долек вы хотите отломить: '))
 # areaOfChocolate = lengthOfChocolate * widthOfChocolate
-# if areaOfChocolate % numOfSlices == 0:
+# if areaOfChocolate % numOfSlices == 0 or numOfSlices % areaOfChocolate == 0:
 #     print('Yes!')
 # else:
 #     print('No!')

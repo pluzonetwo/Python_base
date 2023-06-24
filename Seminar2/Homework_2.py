@@ -6,13 +6,44 @@
 # 2
 
 # Решение:
-result = 0
+# вариант 1
+# result = 0
 
-for i in 0, 1, 0, 1, 0, 1:
-    print(i)
-    if i == 0:
-        result += 1
+# for i in 0, 1, 0, 1, 0, 1:
+#     print(i)
+#     if i == 0:
+#         result += 1
 
-print(result)
+# print(result)
 
-# Вопрос: как сгенерировать n раз числа в диапазоне от 0 до 1?
+# # Вариант 2
+# import random
+# quantity_coins = int(input('Input quantity of coins: '))
+# iter = 0
+# result = 0
+# while iter < quantity_coins:
+#     for i in 0, 1:
+#         print(i)
+#     # random_numbers = random.randint(0, 1)
+#     # print(random_numbers)
+#     iter += 1
+
+# Задача 12: Петя и Катя – брат и сестра. Петя – студент, а Катя – школьница. Петя помогает Кате по математике. 
+# Он задумывает два натуральных числа X и Y (X,Y≤1000), а Катя должна их отгадать. Для этого Петя делает две подсказки. 
+# Он называет сумму этих чисел S и их произведение P. Помогите Кате отгадать задуманные Петей числа.
+
+# sum_x_and_y = int(input('Input sum x and y: '))
+# mul_x_and_y = int(input('Input multipilicate x and y: '))
+
+# for i in range(1000):
+#     for j in range(1000):
+#         if sum_x_and_y == i + j and mul_x_and_y == i * j:
+#             print("Numbers is " f'{i}' " and " f'{j}')
+
+# Задача 14: Требуется вывести все целые степени двойки (т.е. числа вида 2k), не превосходящие числа N.
+
+# maxNum = int(input('Input max num: '))
+
+# for i in range(maxNum):
+#     if 2 ** i < maxNum:
+#         print(2 ** i)
