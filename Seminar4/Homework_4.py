@@ -3,26 +3,36 @@
 # Пользователь вводит 2 числа. n — кол-во элементов первого множества. m — кол-во элементов второго множества. 
 # Затем пользователь вводит сами элементы множеств.
 
-size_multy_1 = int(input('Input a quantity of mul 1: '))
-size_multy_2 = int(input('Input a quantity of mul 2: '))
+# size_multy_1 = int(input('Input a quantity of mul 1: '))
+# size_multy_2 = int(input('Input a quantity of mul 2: '))
 
-multy_1 = set()
-multy_2 = set()
+# multy_1 = set()
+# multy_2 = set()
 
-for elem_1 in range(size_multy_1):
-    input_data_1 = int(input('Input number 1: '))
-    multy_1.add(input_data_1)
+# for elem_1 in range(size_multy_1):
+#     input_data_1 = int(input('Input number 1: '))
+#     multy_1.add(input_data_1)
 
-for elem_2 in range(size_multy_2):
-    input_data_2 = int(input('Input number 2: '))
-    multy_2.add(input_data_2)
+# for elem_2 in range(size_multy_2):
+#     input_data_2 = int(input('Input number 2: '))
+#     multy_2.add(input_data_2)
 
-print(multy_1)
-print(multy_2)
+# print(multy_1)
+# print(multy_2)
 
-same_elem = multy_1.intersection(multy_2)
+# same_elem = multy_1.intersection(multy_2)
 
-same_elem_list = list(same_elem)
-min = same_elem_list[0]
+# same_elem_list = list(same_elem)
+# min = 0
+# print(same_elem_list)
 
-print(sorted(same_elem_list))
+# print(sorted(same_elem_list))
+
+# Задача 24: В фермерском хозяйстве в Карелии выращивают чернику. Она растёт на круглой грядке, причём кусты высажены только по окружности. 
+# Таким образом, у каждого куста есть ровно два соседних. Всего на грядке растёт N кустов.
+# Эти кусты обладают разной урожайностью, поэтому ко времени сбора на них выросло различное число ягод — на i-ом кусте выросло ai ягод.
+# В этом фермерском хозяйстве внедрена система автоматического сбора черники. Эта система состоит из управляющего модуля и 
+# нескольких собирающих модулей. Собирающий модуль за один заход, находясь непосредственно перед некоторым кустом, 
+# собирает ягоды с этого куста и с двух соседних с ним.
+# Напишите программу для нахождения максимального числа ягод, которое может собрать за один заход собирающий модуль, 
+# находясь перед некоторым кустом заданной во входном файле грядки.
