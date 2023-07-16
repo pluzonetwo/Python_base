@@ -97,8 +97,8 @@ def menu():
 if __name__ == '__main__':
     menu()
 
-import os
-from random import randint
+# import os
+# from random import randint
 
 # Var 2
 # def read_file():
