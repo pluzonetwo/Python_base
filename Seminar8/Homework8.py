@@ -36,7 +36,7 @@ def remove_line():
             remove_data = input('Введите какие контакты вы хотели бы удалить: ')
             with open('file.txt', 'r', encoding='utf-8') as f:
                 remove_list = [lines for lines in f if remove_data in lines]
-                if remove_list == 0:
+                if remove_list == []:
                     print('Таких данных нет! Попробуйте еще раз.')
                     remove_line()
                 else:
@@ -51,16 +51,22 @@ def remove_line():
 def change_line():
     search_data = input('Введите имя контакта для изменения: ')
     with open('file.txt', 'r', encoding='utf-8') as file:
+        contact_list = [line for line in file]
+    with open('file.txt', 'r', encoding='utf-8') as file:
         find_list = [line.split(';') for line in file if search_data in line]
-        if find_list == 0:
+        if find_list == []:
             print('Такого контакта нет.')
         else:
-            with open('file.txt', 'r', encoding='utf') as file:
-                my_list = [i for i in file]
-                for line in my_list:
-                    if find_list == line:
-                        my_list.remove(line)
-                        print(my_list)
+            find_list = input('Введите новые данные: ')
+    with open('file.txt', 'r', encoding='utf-8') as file:
+        remove_el = [lines for lines in file if search_data in lines]
+        for i in range(len(remove_el)):
+            contact_list.remove(remove_el[i])
+    with open('file.txt', 'w', encoding='utf-8') as data:
+        for item in contact_list:
+            data.write(item)
+    with open('file.txt', 'a', encoding='utf-8') as data:
+        data.writelines('\n' + f'{find_list}')
 
 def menu():
     print(
